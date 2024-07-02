@@ -24,7 +24,7 @@ services:
     volumes:
       - ./frontend:/app/frontend
     ports:
-      - "3000:3000"
+      - "3001:3001"
     environment:
       - REACT_APP_API_URL=http://localhost:8001/api
 
