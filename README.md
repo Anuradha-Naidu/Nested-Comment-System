@@ -91,10 +91,69 @@ The Comment System allows users to comment on posts and reply to comments. Each 
 
 ## Project Structure
 
+## Created Backend and Frontend separately, it might crash due to errors arised 
+
 ```plaintext
-comment-system/
-├── app.py                 # Main application script
-├── classes.py             # Contains User, Comment, and Post classes
-├── requirements.txt       # List of Python dependencies
-├── Dockerfile             # Docker configuration file
-└── README.md              # This README file
+
+CommentSystem/
+│
+├── backend/
+│   ├── commentsystem/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   ├── asgi.py
+│   │   ├── __pycache__/
+│   │   └── ...
+│   │
+│   ├── comments/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   │   └── ...
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │   ├── __pycache__/
+│   │   └── ...
+│   │
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── ...
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Comment.js
+│   │   │   ├── CommentList.js
+│   │   │   ├── Post.js
+│   │   │   ├── PostList.js
+│   │   │   └── ...
+│   │   │
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── ...
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   └── ...
+│
+├── docker-compose.yml
+└── README.md
+```
+## Screenshots : 
+
+
+
