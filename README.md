@@ -19,6 +19,71 @@ The Comment System allows users to comment on posts and reply to comments. Each 
 - Docker (for containerized setup)
 - pip3 (Python package installer)
 
+## Project Structure
+
+## Created Backend and Frontend separately, it might crash due to errors arised 
+
+```plaintext
+
+CommentSystem/
+│
+├── backend/
+│   ├── commentsystem/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   ├── asgi.py
+│   │   ├── __pycache__/
+│   │   └── ...
+│   │
+│   ├── comments/
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations/
+│   │   │   ├── __init__.py
+│   │   │   └── ...
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │   ├── __pycache__/
+│   │   └── ...
+│   │
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── ...
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Comment.js
+│   │   │   ├── CommentList.js
+│   │   │   ├── Post.js
+│   │   │   ├── PostList.js
+│   │   │   └── ...
+│   │   │
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── ...
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── Dockerfile
+│   └── ...
+│
+├── docker-compose.yml
+└── README.md
+```
+
 ## Installation
 
 ### Local Setup
@@ -89,71 +154,11 @@ The Comment System allows users to comment on posts and reply to comments. Each 
 
     Use the edit and delete buttons to modify or remove your comments.
 
-## Project Structure
-
-## Created Backend and Frontend separately, it might crash due to errors arised 
-
-```plaintext
-
-CommentSystem/
-│
-├── backend/
-│   ├── commentsystem/
-│   │   ├── __init__.py
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   ├── wsgi.py
-│   │   ├── asgi.py
-│   │   ├── __pycache__/
-│   │   └── ...
-│   │
-│   ├── comments/
-│   │   ├── __init__.py
-│   │   ├── admin.py
-│   │   ├── apps.py
-│   │   ├── migrations/
-│   │   │   ├── __init__.py
-│   │   │   └── ...
-│   │   ├── models.py
-│   │   ├── serializers.py
-│   │   ├── tests.py
-│   │   ├── urls.py
-│   │   ├── views.py
-│   │   ├── __pycache__/
-│   │   └── ...
-│   │
-│   ├── manage.py
-│   ├── requirements.txt
-│   └── Dockerfile
-│
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   └── ...
-│   │
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Comment.js
-│   │   │   ├── CommentList.js
-│   │   │   ├── Post.js
-│   │   │   ├── PostList.js
-│   │   │   └── ...
-│   │   │
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   ├── App.css
-│   │   ├── index.css
-│   │   └── ...
-│   │
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── Dockerfile
-│   └── ...
-│
-├── docker-compose.yml
-└── README.md
-```
 ## Screenshots : 
+<img width="1438" alt="commentsystem jpg" src="https://github.com/Anuradha-Naidu/Nested-Comment-System/assets/88324015/74f0b026-83c3-402b-be8a-2f5d429fd9bf">
+
+<img width="1438" alt="commentsystem2" src="https://github.com/Anuradha-Naidu/Nested-Comment-System/assets/88324015/f86c26de-877f-4ff0-bd55-b134c90ad1c6">
+
 
 
 
